@@ -45,6 +45,8 @@
             // lblContacto
             // 
             lblContacto.AutoSize = true;
+            lblContacto.BackColor = Color.Blue;
+            lblContacto.ForeColor = Color.White;
             lblContacto.Location = new Point(40, 25);
             lblContacto.Name = "lblContacto";
             lblContacto.Size = new Size(56, 15);
@@ -54,7 +56,9 @@
             // lblNumero
             // 
             lblNumero.AutoSize = true;
-            lblNumero.Location = new Point(45, 78);
+            lblNumero.BackColor = Color.Blue;
+            lblNumero.ForeColor = Color.White;
+            lblNumero.Location = new Point(45, 73);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(51, 15);
             lblNumero.TabIndex = 1;
@@ -62,25 +66,29 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = Color.Blue;
+            btnCancelar.ForeColor = Color.White;
             btnCancelar.Location = new Point(45, 125);
             btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(92, 36);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnAceptar
             // 
+            btnAceptar.BackColor = Color.Blue;
             btnAceptar.Enabled = false;
+            btnAceptar.ForeColor = Color.White;
             btnAceptar.Location = new Point(143, 125);
             btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(96, 36);
             btnAceptar.TabIndex = 3;
             btnAceptar.Text = "Agendar";
-            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
             // 
             // lstResumen
@@ -116,6 +124,8 @@
             // lblCantContactos
             // 
             lblCantContactos.AutoSize = true;
+            lblCantContactos.BackColor = Color.Blue;
+            lblCantContactos.ForeColor = Color.White;
             lblCantContactos.Location = new Point(22, 255);
             lblCantContactos.Name = "lblCantContactos";
             lblCantContactos.Size = new Size(81, 15);
@@ -125,7 +135,9 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(22, 308);
+            lblFecha.BackColor = Color.Blue;
+            lblFecha.ForeColor = Color.White;
+            lblFecha.Location = new Point(22, 303);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(74, 15);
             lblFecha.TabIndex = 8;
@@ -151,6 +163,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(274, 362);
             Controls.Add(mtbFecha);
             Controls.Add(mtbCantContacto);

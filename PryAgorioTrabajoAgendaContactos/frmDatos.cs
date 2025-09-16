@@ -40,5 +40,22 @@ namespace PryAgorioTrabajoAgendaContactos
                 btnSiguiente.Enabled = false;
             }
         }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            indice--;
+            lblDatos.Text = vecContacto[indice];
+
+            if (indice == 0)
+            {
+                btnAnterior.Enabled = false;
+            }
+
+            if(indice < 5)
+            {
+                btnSiguiente.Enabled =true;
+
+            }
+        }
     }
 }

@@ -35,39 +35,53 @@
             // 
             // btnAnterior
             // 
-            btnAnterior.Location = new Point(197, 223);
+            btnAnterior.BackColor = Color.Blue;
+            btnAnterior.ForeColor = Color.White;
+            btnAnterior.Location = new Point(80, 149);
+            btnAnterior.Margin = new Padding(3, 2, 3, 2);
             btnAnterior.Name = "btnAnterior";
-            btnAnterior.Size = new Size(94, 29);
+            btnAnterior.Size = new Size(96, 52);
             btnAnterior.TabIndex = 0;
             btnAnterior.Text = "Anterior";
-            btnAnterior.UseVisualStyleBackColor = true;
+            btnAnterior.UseVisualStyleBackColor = false;
+            btnAnterior.Click += btnAnterior_Click;
             // 
             // btnSiguiente
             // 
-            btnSiguiente.Location = new Point(478, 223);
+            btnSiguiente.BackColor = Color.Blue;
+            btnSiguiente.ForeColor = Color.White;
+            btnSiguiente.Location = new Point(238, 149);
+            btnSiguiente.Margin = new Padding(3, 2, 3, 2);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(94, 29);
+            btnSiguiente.Size = new Size(94, 52);
             btnSiguiente.TabIndex = 1;
             btnSiguiente.Text = "Siguiente";
-            btnSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.UseVisualStyleBackColor = false;
             btnSiguiente.Click += btnSiguiente_Click;
             // 
             // lblDatos
             // 
+            lblDatos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblDatos.AutoSize = true;
-            lblDatos.Location = new Point(351, 86);
+            lblDatos.BackColor = Color.Blue;
+            lblDatos.BorderStyle = BorderStyle.Fixed3D;
+            lblDatos.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDatos.ForeColor = Color.White;
+            lblDatos.Location = new Point(164, 44);
             lblDatos.Name = "lblDatos";
-            lblDatos.Size = new Size(0, 20);
+            lblDatos.Size = new Size(2, 34);
             lblDatos.TabIndex = 2;
             // 
             // frmDatos
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(192, 192, 255);
+            ClientSize = new Size(415, 364);
             Controls.Add(lblDatos);
             Controls.Add(btnSiguiente);
             Controls.Add(btnAnterior);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmDatos";
             Text = "frmDatos";
             Load += frmDatos_Load;
