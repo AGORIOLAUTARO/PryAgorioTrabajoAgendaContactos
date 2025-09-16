@@ -71,6 +71,13 @@ namespace PryAgorioTrabajoAgendaContactos
         {
 
         }
+
+        private void btnGestion_Click(object sender, EventArgs e)
+        {
+            frmAgendaContactos VentanaGestion = new frmAgendaContactos();
+            VentanaGestion.vecContacto = vecContacto;
+            VentanaGestion.ShowDialog();
+        }
     }
 }
     

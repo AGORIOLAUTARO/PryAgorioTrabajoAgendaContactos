@@ -21,13 +21,13 @@ namespace PryAgorioTrabajoAgendaContactos
         int indice = 0;
         private void frmDatos_Load(object sender, EventArgs e)
         {
-            vecContacto[0] = "Depietri";
-            vecContacto[1] = "Catalan";
-            vecContacto[2] = "Guiñazu";
-            vecContacto[3] = "Gandolfi";
-            vecContacto[4] = "Willington";
+          //  vecContacto[0] = "Depietri";
+           // vecContacto[1] = "Catalan";
+           // vecContacto[2] = "Guiñazu";
+          //  vecContacto[3] = "Gandolfi";
+          //  vecContacto[4] = "Willington";
 
-            lblDatos.Text = vecContacto[indice];
+            lblDatos.Text = vecContacto[0];
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)

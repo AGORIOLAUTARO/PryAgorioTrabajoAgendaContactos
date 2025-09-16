@@ -40,6 +40,7 @@
             lblFecha = new Label();
             mtbCantContacto = new MaskedTextBox();
             mtbFecha = new MaskedTextBox();
+            btnGestion = new Button();
             SuspendLayout();
             // 
             // lblContacto
@@ -47,9 +48,9 @@
             lblContacto.AutoSize = true;
             lblContacto.BackColor = Color.Blue;
             lblContacto.ForeColor = Color.White;
-            lblContacto.Location = new Point(40, 25);
+            lblContacto.Location = new Point(55, 30);
             lblContacto.Name = "lblContacto";
-            lblContacto.Size = new Size(56, 15);
+            lblContacto.Size = new Size(69, 20);
             lblContacto.TabIndex = 0;
             lblContacto.Text = "Contacto";
             // 
@@ -58,9 +59,9 @@
             lblNumero.AutoSize = true;
             lblNumero.BackColor = Color.Blue;
             lblNumero.ForeColor = Color.White;
-            lblNumero.Location = new Point(45, 73);
+            lblNumero.Location = new Point(61, 93);
             lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(51, 15);
+            lblNumero.Size = new Size(63, 20);
             lblNumero.TabIndex = 1;
             lblNumero.Text = "Número";
             // 
@@ -68,10 +69,9 @@
             // 
             btnCancelar.BackColor = Color.Blue;
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(45, 125);
-            btnCancelar.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar.Location = new Point(51, 150);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(92, 36);
+            btnCancelar.Size = new Size(105, 48);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -82,10 +82,9 @@
             btnAceptar.BackColor = Color.Blue;
             btnAceptar.Enabled = false;
             btnAceptar.ForeColor = Color.White;
-            btnAceptar.Location = new Point(143, 125);
-            btnAceptar.Margin = new Padding(3, 2, 3, 2);
+            btnAceptar.Location = new Point(163, 150);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(96, 36);
+            btnAceptar.Size = new Size(110, 48);
             btnAceptar.TabIndex = 3;
             btnAceptar.Text = "Agendar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -94,30 +93,26 @@
             // lstResumen
             // 
             lstResumen.FormattingEnabled = true;
-            lstResumen.ItemHeight = 15;
-            lstResumen.Location = new Point(55, 187);
-            lstResumen.Margin = new Padding(3, 2, 3, 2);
+            lstResumen.Location = new Point(58, 221);
             lstResumen.Name = "lstResumen";
-            lstResumen.Size = new Size(189, 49);
+            lstResumen.Size = new Size(215, 64);
             lstResumen.TabIndex = 4;
             // 
             // txtContacto
             // 
-            txtContacto.Location = new Point(129, 17);
-            txtContacto.Margin = new Padding(3, 2, 3, 2);
+            txtContacto.Location = new Point(147, 23);
             txtContacto.Name = "txtContacto";
-            txtContacto.Size = new Size(110, 23);
+            txtContacto.Size = new Size(125, 27);
             txtContacto.TabIndex = 5;
             txtContacto.TextChanged += txtContacto_TextChanged;
             // 
             // mtbNumero
             // 
             mtbNumero.Enabled = false;
-            mtbNumero.Location = new Point(129, 70);
-            mtbNumero.Margin = new Padding(3, 2, 3, 2);
+            mtbNumero.Location = new Point(147, 93);
             mtbNumero.Mask = "(999)000-0000";
             mtbNumero.Name = "mtbNumero";
-            mtbNumero.Size = new Size(110, 23);
+            mtbNumero.Size = new Size(125, 27);
             mtbNumero.TabIndex = 6;
             mtbNumero.MaskInputRejected += mtbNumero_MaskInputRejected;
             // 
@@ -126,9 +121,9 @@
             lblCantContactos.AutoSize = true;
             lblCantContactos.BackColor = Color.Blue;
             lblCantContactos.ForeColor = Color.White;
-            lblCantContactos.Location = new Point(22, 255);
+            lblCantContactos.Location = new Point(25, 305);
             lblCantContactos.Name = "lblCantContactos";
-            lblCantContactos.Size = new Size(81, 15);
+            lblCantContactos.Size = new Size(99, 20);
             lblCantContactos.TabIndex = 7;
             lblCantContactos.Text = "CantContacto";
             // 
@@ -137,34 +132,49 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.Blue;
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(22, 303);
+            lblFecha.Location = new Point(32, 358);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(74, 15);
+            lblFecha.Size = new Size(92, 20);
             lblFecha.TabIndex = 8;
             lblFecha.Text = "Fecha y hora";
             // 
             // mtbCantContacto
             // 
-            mtbCantContacto.Location = new Point(139, 252);
+            mtbCantContacto.Location = new Point(159, 305);
+            mtbCantContacto.Margin = new Padding(3, 4, 3, 4);
             mtbCantContacto.Name = "mtbCantContacto";
-            mtbCantContacto.Size = new Size(100, 23);
+            mtbCantContacto.Size = new Size(114, 27);
             mtbCantContacto.TabIndex = 9;
             // 
             // mtbFecha
             // 
-            mtbFecha.Location = new Point(139, 300);
+            mtbFecha.Location = new Point(158, 358);
+            mtbFecha.Margin = new Padding(3, 4, 3, 4);
             mtbFecha.Mask = "00/00/0000 00:00";
             mtbFecha.Name = "mtbFecha";
-            mtbFecha.Size = new Size(100, 23);
+            mtbFecha.Size = new Size(114, 27);
             mtbFecha.TabIndex = 10;
             mtbFecha.ValidatingType = typeof(DateTime);
             // 
+            // btnGestion
+            // 
+            btnGestion.BackColor = Color.Blue;
+            btnGestion.ForeColor = Color.White;
+            btnGestion.Location = new Point(109, 425);
+            btnGestion.Name = "btnGestion";
+            btnGestion.Size = new Size(94, 29);
+            btnGestion.TabIndex = 11;
+            btnGestion.Text = "Gestion";
+            btnGestion.UseVisualStyleBackColor = false;
+            btnGestion.Click += btnGestion_Click;
+            // 
             // frmAgendaContactos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
-            ClientSize = new Size(274, 362);
+            ClientSize = new Size(313, 483);
+            Controls.Add(btnGestion);
             Controls.Add(mtbFecha);
             Controls.Add(mtbCantContacto);
             Controls.Add(lblFecha);
@@ -177,7 +187,6 @@
             Controls.Add(lblNumero);
             Controls.Add(lblContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmAgendaContactos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Agenda Contactos";
@@ -199,5 +208,6 @@
         private Label lblFecha;
         private MaskedTextBox mtbCantContacto;
         private MaskedTextBox mtbFecha;
+        private Button btnGestion;
     }
 }
