@@ -51,8 +51,8 @@ namespace PryAgorioTrabajoAgendaContactos
         {
             vContacto = txtContacto.Text;
             vNumero = mtbNumero.Text;
-            vecContacto[indice] = mtbCantContacto.Text;
-            vecNumero[indice] = mtbFecha.Text;
+            vecContacto[indice] = vContacto;
+            vecNumero[indice] = vNumero;
 
             lstResumen.Items.Add("Contacto: " + vContacto + " - Telefono: " + vNumero);
 
@@ -74,9 +74,9 @@ namespace PryAgorioTrabajoAgendaContactos
 
         private void btnGestion_Click(object sender, EventArgs e)
         {
-            frmAgendaContactos VentanaGestion = new frmAgendaContactos();
+            frmDatos VentanaGestion = new frmDatos();
             VentanaGestion.vecContacto = vecContacto;
-            VentanaGestion.ShowDialog();
+            VentanaGestion.Show();
         }
     }
 }
